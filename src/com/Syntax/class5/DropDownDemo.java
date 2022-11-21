@@ -21,9 +21,11 @@ public class DropDownDemo {
         //find the element dropdown by looking for select tag
         WebElement dropDown = driver.findElement(By.xpath("//select[@id='select-demo']"));
         //use select class
+
         Select select=new Select(dropDown);
         //making selection, select option by index
         select.selectByIndex(5);
+
         Thread.sleep(3000);
         //select by visible text
         select.selectByVisibleText("Saturday");
