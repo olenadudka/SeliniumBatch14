@@ -57,7 +57,7 @@ public class CalendarPagination {
                 }
 
             }
-            if (! idFound){
+            if (!  idFound){
                 WebElement nextButton = driver.findElement(By.xpath("//a[text()='Next']"));
                 nextButton.click();
             }
